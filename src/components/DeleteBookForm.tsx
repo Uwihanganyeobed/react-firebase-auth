@@ -20,7 +20,8 @@ const DeleteBookForm: React.FC = () => {
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
-        progress: undefined,
+        className: 'bg-green-500 text-white',
+        progressClassName: 'bg-green-300',
       });
     } catch (err) {
       if (err instanceof Error) {
@@ -31,7 +32,8 @@ const DeleteBookForm: React.FC = () => {
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
-          progress: undefined,
+          className: 'bg-red-500 text-white',
+          progressClassName: 'bg-red-300',
         });
       } else {
         toast.error('An unknown error occurred.', {
@@ -41,16 +43,25 @@ const DeleteBookForm: React.FC = () => {
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
-          progress: undefined,
+          className: 'bg-red-500 text-white',
+          progressClassName: 'bg-red-300',
         });
       }
     }
   };
 
   return (
-    <form onSubmit={handleDeleteBook}>
-      <input type="text" name="id" placeholder="Document ID" required />
-      <button type="submit">Delete Book</button>
+    <form onSubmit={handleDeleteBook} className="bg-white p-5 rounded shadow-md w-80">
+      <label htmlFor="id" className="block mb-2 font-bold text-gray-700">Document ID:</label>
+      <input
+        type="text"
+        id="id"
+        name="id"
+        placeholder="Document ID"
+        className="w-full p-2 mb-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+        required
+      />
+      <button type="submit" className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 w-full">Delete Book</button>
     </form>
   );
 };
