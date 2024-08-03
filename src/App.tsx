@@ -75,7 +75,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
       <ToastContainer />
-      <h1 className="text-blue-500 text-3xl mb-10"> <RiFirebaseFill /> Book Management App</h1>
+      <h1 className="text-blue-500 text-3xl mb-10"> <RiFirebaseFill color='yellow' /> Book Management App</h1>
       {user ? (
         <>
           <div className="mb-6">
