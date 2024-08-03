@@ -27,7 +27,7 @@ const AddBookForm: React.FC = () => {
       setTitle('');
       setAuthor('');
     } catch (err) {
-      toast.error(`Error adding book: ${err.message}`, {
+      toast.error('An unknown error occurred.', {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,

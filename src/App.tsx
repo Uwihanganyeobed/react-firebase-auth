@@ -1,6 +1,6 @@
 // src/App.tsx
 import React, { useState, useEffect } from 'react';
-import { getAuth, signOut, onAuthStateChanged } from 'firebase/auth';
+import { getAuth, signOut, onAuthStateChanged, User } from 'firebase/auth';
 import AddBookForm from './components/AddBookForm';
 import DeleteBookForm from './components/DeleteBookForm';
 import UpdateBookForm from './components/UpdateBookForm';
