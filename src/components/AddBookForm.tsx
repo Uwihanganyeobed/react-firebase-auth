@@ -47,6 +47,7 @@ const AddBookForm: React.FC = () => {
         id="title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
+        placeholder='Add Book Title'
         className="w-full mb-4 p-2 border border-gray-300 rounded"
         required
       />
@@ -54,6 +55,7 @@ const AddBookForm: React.FC = () => {
       <input
         type="text"
         id="author"
+        placeholder='Add Book Author'
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
         className="w-full mb-4 p-2 border border-gray-300 rounded"

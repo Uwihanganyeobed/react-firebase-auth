@@ -24,6 +24,7 @@ const SignUpForm: React.FC = () => {
       <input
         type="email"
         id="email"
+        placeholder='abc@example.com'
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         className="w-full p-2 mb-3 border rounded"
@@ -33,6 +34,7 @@ const SignUpForm: React.FC = () => {
       <input
         type="password"
         id="password"
+        placeholder='abcdefz'
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         className="w-full p-2 mb-3 border rounded"
