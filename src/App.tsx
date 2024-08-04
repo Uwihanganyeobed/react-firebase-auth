@@ -9,6 +9,8 @@ import LoginForm from './components/LoginForm';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { RiFirebaseFill } from "react-icons/ri";
+import UploadFileForm from './components/UploadFileForm';
+import ListFiles from './components/ListFiles';
 
 const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
@@ -83,6 +85,9 @@ const App: React.FC = () => {
             <AddBookForm />
             <DeleteBookForm />
             <UpdateBookForm />
+            <h2 className='text-2xl text-center text-purple-600'>Handling Files</h2>
+            <UploadFileForm />
+            <ListFiles />
           </div>
           <div>
             <button
